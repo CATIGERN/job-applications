@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: job_offers_index_creation
+      author: unknown
+      dbms: hsqldb
+      changes:
+        - createIndex:
+            columns:
+              - column:
+                  name: id
+            indexName: id_index_i
+            tableName: job_offers
+            uniques: true

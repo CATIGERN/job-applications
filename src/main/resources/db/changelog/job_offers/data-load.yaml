@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - changeSet:
+      id: initial_data_load
+      author: unknown
+      changes:
+        - loadData:
+            columns:
+              - column:
+                  - name: internal_id
+              - column:
+                  - name: id
+              - column:
+                  - name: job_title
+              - column:
+                  - name: job_description
+              - column:
+                  - name: location
+              - column:
+                  - name: job_offer_status
+              - column:
+                  - name: start_date
+              - column:
+                  - name: created_time
+              - column:
+                  - name: updated_time
+            encoding: UTF-8
+            file: db/changelog/job_offers/initial-data.csv
+            quotchar: ""
+            separator: ","
+            tableName: job_offers
+

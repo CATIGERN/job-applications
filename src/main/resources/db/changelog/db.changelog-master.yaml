@@ -1,0 +1,8 @@
+databaseChangeLog:
+  ###############################################
+  ## To initialize the liquibase.schema variable.
+  ###############################################
+  - include:
+      file: db/changelog/job_offers/changelog.yaml
+  - include:
+      file: db/changelog/job_applications/changelog.yaml

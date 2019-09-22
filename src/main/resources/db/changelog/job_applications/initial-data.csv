@@ -1,0 +1,2 @@
+internal_id,id,candidate_email,resume_text,job_offers_internal_id,application_status,created_time,updated_time
+1,ba326734-7f53-4719-9fe1-eafed9ce1295,abc@testId.com,First Candidate for the job,1,APPLIED,2019-09-11T10:37:58,2019-09-11T10:37:58

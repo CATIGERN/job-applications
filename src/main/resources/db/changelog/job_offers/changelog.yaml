@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/job_offers/tables.yaml
+  - include:
+      file: db/changelog/job_offers/constraints.yaml
+  - include:
+      file: db/changelog/job_offers/indexes.yaml
+  - include:
+      file: db/changelog/job_offers/sequences.yaml
+  - include:
+      file: db/changelog/job_offers/data-load.yaml

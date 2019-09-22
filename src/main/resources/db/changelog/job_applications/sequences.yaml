@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: job_applications_seq
+      author: unknown
+      changes:
+        - createSequence:
+            cycle: true
+            incrementBy: 1
+            sequenceName: job_applications_seq
+            startValue: 100

@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: job_offers_primary_key
+      author: unknown
+      dbms: hsqldb
+      changes:
+        - addPrimaryKey:
+            columnNames: internal_id
+            constraintName: job_offers_pk
+            tableName: job_offers
+  - changeSet:
+      id: job_offers_unique_constraint
+      author: unknown
+      dbms: hsqldb
+      changes:
+        - addUniqueConstraint:
+            columnNames: id
+            constraintName: job_offers_uk
+            tableName: job_offers

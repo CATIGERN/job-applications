@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: job_offers_seq
+      author: unknown
+      dbms: hsqldb
+      changes:
+        - createSequence:
+            cycle: true
+            incrementBy: 1
+            sequenceName: job_offers_seq
+            startValue: 100

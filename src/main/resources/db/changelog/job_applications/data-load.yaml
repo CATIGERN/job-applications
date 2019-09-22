@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: initial_data_load_job_applications
+      author: unknown
+      changes:
+        - loadData:
+            columns:
+              - column:
+                  - name: internal_id
+              - column:
+                  - name: id
+              - column:
+                  - name: candidate_email
+              - column:
+                  - name: resume_text
+              - column:
+                  - name: job_offers_internal_id
+              - column:
+                  - name: application_status
+              - column:
+                  - name: created_time
+              - column:
+                  - name: updated_time
+            encoding: UTF-8
+            file: db/changelog/job_applications/initial-data.csv
+            quotchar: ""
+            separator: ","
+            tableName: job_applications
+

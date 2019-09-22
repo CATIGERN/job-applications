@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: jobs
+
+server:
+  port: ${port:8600}

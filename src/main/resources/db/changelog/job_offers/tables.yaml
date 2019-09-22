@@ -1,0 +1,60 @@
+databaseChangeLog:
+  - changeSet:
+      id: job_offers_table_creation
+      author: unknown
+      dbms: hsqldb
+      changes:
+        - createTable:
+            remarks: "Create Table for Job Offers."
+            tableName: job_offers
+            columns:
+              - column:
+                  name: internal_id
+                  type: numeric(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: job_title
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: job_description
+                  type: varchar(1000)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: location
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: job_offer_status
+                  type: varchar(10)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: start_date
+                  type: varchar(10)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: vacancies
+                  type: numeric
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_time
+                  type: date
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_time
+                  type: date
+                  constraints:
+                    nullable: false

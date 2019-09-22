@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/job_applications/tables.yaml
+  - include:
+      file: db/changelog/job_applications/constraints.yaml
+  - include:
+      file: db/changelog/job_applications/sequences.yaml
+  - include:
+      file: db/changelog/job_applications/data-load.yaml
